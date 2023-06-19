@@ -70,7 +70,8 @@ export async function getWhatsappPage(
     } else {
       return await browser.newPage();
     }
-  } catch {
+  } catch(error) {
+    console.log(error);
     return false;
   }
 }
